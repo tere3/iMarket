@@ -1,0 +1,15 @@
+<ion-view title="Compras">
+	<ion-content>
+	<ion-list class="list">
+		<ion-item href="#" ng-repeat="list in listM" ng-click="showDetails(list)">
+			<a class="item item-icon-left" href="#">
+	    		<i class="icon ion-ios-cart"></i>
+	    		Compras
+	    		<span class="item-note">
+	     		Lugar: {{list.superMarket}}
+	    		</span>
+	  		</a>
+		</ion-item>
+	</ion-list>
+	</ion-content>
+</ion-view>

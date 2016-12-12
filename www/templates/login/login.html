@@ -1,0 +1,25 @@
+<ion-view title="Iniciar sesion" >
+	<ion-content class="padding" style="background: url(img/2144.jpg) center; background-size: cover;">
+	<div class="hero no header flat">
+		<div class="content">
+			<div class="app-icon">
+				<h1>iMarket</h1>
+			</div>
+		</div>
+	</div>
+		<div class="List List-inset">
+			<label for="" class="item item-input">
+				<input type="text" placeholder="Nombre de usuario" ng-model="data.username">
+			</label>
+			<label for="" class="item item-input">
+				<input type="password" placeholder="Contraseña" ng-model="data.password">
+			</label>
+		</div>
+		<div class="text-center">No tienes cuenta <a href="/#/register">Crear cuenta</a></div>
+		<button class="button button-full button-positive ink" ng-click="init()">Entrar</button>
+		<div class="button-bar social-login">
+			<button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+			<button ng-click="login()" class="button button-small button-border icon-left ion-social-facebook button-positive-900">FaceBook</button>
+		</div>
+	</ion-content>
+</ion-view>

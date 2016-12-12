@@ -1,0 +1,19 @@
+<ion-modal-view>
+    <ion-header-bar>
+    <button class="button button-icon ion-ios-arrow-back" ng-click="closeModal()"></button>
+      <h1 class="title">Detalles de Tarea</h1>
+    </ion-header-bar>
+      <ion-content class="padding">
+  	    <div >
+  		   <h3>{{taskDetails.name}}</h3>
+              <h5>{{taskDetails.materia}}</h5>
+              <p>{{taskDetails.description}}</p>
+              <span>Fecha de entrega: {{taskDetails.endDate | date}}</span>
+              <br>
+              <span>Fecha de asignación: {{taskDetails.beginDate | date}}</span>
+              <p><ion-checkbox ng-model="isChecked.value" ng-change="statusChange(isChecked.value)">{{valor}}</ion-checkbox></p>
+             
+        
+  	      </div>
+      </ion-content>
+  </ion-modal-view>

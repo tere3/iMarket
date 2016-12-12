@@ -1,0 +1,26 @@
+<ion-view title="Tareas">
+	<ion-content>
+		 <ion-list class="list">
+			 <ion-item href="#" ng-repeat="task in tasks" ng-click="showDetails(task)">
+				 <div class="">
+					 <a class="item item-icon-left" href="#" >
+						 <i class="ion-document-text"></i>
+						 Tarea: {{task.name}} <br><span>Fecha de entrega: {{task.endDate | date}}</span>
+						 <div>
+						 	<p class="item-note">
+				     			
+				    			</p>
+						 </div>
+						<p>Materia: {{task.materia}}</p>
+					 </a>
+				 </div>
+			 </ion-item>
+		 </ion-list>
+
+		<ion-floating-menu buttom="10px">
+	     		<ion-floating-item icon="ion-document-text" click="myEvent()" text="Tarea"></ion-floating-item>
+	      		<ion-floating-item icon="ion-person-stalker" click="myEvent()" text="Evento"></ion-floating-item>
+	      		<ion-floating-item icon="ion-ios-cart" click="myEvent()" text="Super"></ion-floating-item>
+    		</ion-floating-menu>
+	</ion-content>
+</ion-view>

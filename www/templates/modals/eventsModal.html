@@ -1,0 +1,15 @@
+<ion-modal-view>
+    <ion-header-bar>
+    <button class="button button-icon ion-ios-arrow-back" ng-click="closeModal()"></button>
+      <h1 class="title">Detalles de Evento</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+	    <div>
+			      <h3>Nombre: {{eventDetails.name}}</h3>
+                      <p>Hora: {{eventDetails.hour}}</p>
+                      <p>Descripcion: {{eventDetails.description}}</p>
+                      <p>Lugar: {{eventDetails.lugar}}</p>
+                      <p>Fecha: {{eventDetails.Date | date}}</p>
+	      </div>
+    </ion-content>
+  </ion-modal-view>
