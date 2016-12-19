@@ -1,0 +1,45 @@
+<ion-modal-view title="Agregar Tarea">
+    <ion-header-bar>
+    <button class="button button-icon ion-ios-arrow-back" ng-click="closeTaskModal()"></button>
+      <h1 class="title">Agregar tu tarea</h1>
+    </ion-header-bar>
+      <ion-content>
+      <div class="container">
+      <div ng-controller="TaskController">
+	      <form name="tasksForm">
+		     	<div class="list">
+
+		     		<div class="form-group">
+				  <label class="item item-input item-floating-label">
+				    	<span class="input-label">Nombre de la tarea</span>
+				    	<input type="text" placeholder="Nombre de la tarea" class="form-control" name="name" ng-model="formData.name">
+				  </label>
+				  </div>
+
+				 <div class="form-group">
+				  <label class="item item-input item-floating-label">
+				    	<span class="input-label">Materia</span>
+				    	<input type="text" placeholder="Materia" class="form-control" name="materia" ng-model="formData.materia">
+				  </label>
+				 </div>
+
+				 <div class="form-group">
+				  <label class="item item-input item-floating-label">
+				    	<span class="input-label">Detalles de la tarea</span>
+				    	<input type="text" placeholder="Detalles de la tarea" class="form-control" name="description" ng-model="formData.description">
+				  </label>
+				 </div>
+
+				 <div class="form-group">
+				  <label class="item item-input item-floating-label">
+				    	<span class="input-label">Fecha de entrega</span>
+				    	<input type="date" placeholder="Fecha de entrega"  class="form-control" name="endDate" ng-model="formData.description">
+				  </label>
+				 </div>
+			</div>
+					<input type="submit" value="Agregar tarea" class="form-control button button-block button-positive ng-pristine ng-invalid" ng-disabled="reviewForm.$invalid" ng-click="submitForm(formData)">
+		</form>
+	</div>
+	</div>
+      </ion-content>
+  </ion-modal-view>

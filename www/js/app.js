@@ -120,7 +120,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'loginModule', 'tabsM
     url: '/profile',
         templateUrl: 'templates/login/profile.html',
         controller: 'profileCtrl'
-  });
+  })
+
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 });
